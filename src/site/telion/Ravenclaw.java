@@ -64,8 +64,7 @@ public class Ravenclaw extends Hogwarts {
         return mind + wisdom + wit + creation;
     }
 
-    @Override
-    public void printStudentComparisonByFaculty(Hogwarts enemy) {
+    public void printStudentComparison(Ravenclaw enemy) {
         System.out.println();
         if (!isSameFaculty(enemy)) {
             return;

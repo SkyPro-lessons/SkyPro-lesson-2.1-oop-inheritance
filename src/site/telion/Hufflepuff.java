@@ -8,8 +8,8 @@ public class Hufflepuff extends Hogwarts {
     public Hufflepuff(String name, int magicPower, int transgressionDistance, int industriousness, int loyalty, int honesty) {
         super(name, magicPower, transgressionDistance);
         this.industriousness = checkValue(industriousness);
-        this.loyalty = (loyalty);
-        this.honesty = (honesty);
+        this.loyalty = checkValue(loyalty);
+        this.honesty = checkValue(honesty);
     }
 
     public int getIndustriousness() {
@@ -52,8 +52,7 @@ public class Hufflepuff extends Hogwarts {
         return industriousness + loyalty + honesty;
     }
 
-    @Override
-    public void printStudentComparisonByFaculty(Hogwarts enemy) {
+    public void printStudentComparison(Hufflepuff enemy) {
         System.out.println();
         if (!isSameFaculty(enemy)) {
             return;
