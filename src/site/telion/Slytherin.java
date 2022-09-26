@@ -73,8 +73,7 @@ public class Slytherin extends Hogwarts {
         return cunning + determination + ambition + resourcefulness + lustForPower;
     }
 
-    @Override
-    public void printStudentComparisonByFaculty(Hogwarts enemy) {
+    public void printStudentComparison(Slytherin enemy) {
         System.out.println();
         if (!isSameFaculty(enemy)) {
             return;

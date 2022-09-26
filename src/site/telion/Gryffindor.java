@@ -52,8 +52,7 @@ public class Gryffindor extends Hogwarts {
         return nobility + honour + bravery;
     }
 
-    @Override
-    public void printStudentComparisonByFaculty(Hogwarts enemy) {
+    public void printStudentComparison(Gryffindor enemy) {
         System.out.println();
         if (!isSameFaculty(enemy)) {
             return;

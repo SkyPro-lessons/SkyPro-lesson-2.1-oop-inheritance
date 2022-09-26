@@ -11,7 +11,7 @@ public abstract class Hogwarts {
         this.transgressionDistance = checkValue(transgressionDistance);
     }
 
-    public int checkValue(int value) {
+    protected int checkValue(int value) {
         if (value < 0 || value > 100) {
             System.out.println("Введено недопустимое значение " + value);
             throw new IllegalArgumentException();
@@ -26,8 +26,6 @@ public abstract class Hogwarts {
     }
 
     public abstract int calculationSumPoints();
-
-    public abstract void printStudentComparisonByFaculty(Hogwarts enemy);
 
     public boolean isSameFaculty(Hogwarts enemy) {
         if (this.getClass() != enemy.getClass()) {
